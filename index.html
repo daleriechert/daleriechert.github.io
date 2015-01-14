@@ -1,10 +1,9 @@
 ﻿<html>
 
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
 <title>Dale Riechert</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="script.js"></script>
-<head profile="http://www.w3.org/2005/10/profile">
 <link rel="icon" 
       type="image/png" 
       href="favicon.png">
@@ -14,7 +13,7 @@
 
 <div id="header">
 <div id="header-left"><div id="header-left-container">
-	<img alt="" height="100%" src="portrait.png">
+	<img style="-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius:50%;" alt="" src="portrait.jpg">
 </div></div>
 <div id="header-right"><div id="header-right-container">
 	<h1><span style="font-weight:100">Dale</span>Riechert</h1><br>
@@ -25,21 +24,39 @@
 <div id="middle">
 <div id="nav">
 	<div id="nav1" class="nav-item" onmouseover="nav1over()" onmouseleave="nav1leave()" onclick="nav1click()">about me</div>
-	<div id="nav3" class="nav-item">resume</div>
-	<div id="nav4" class="nav-item">projects</div>
-	<div id="nav2" class="nav-item" onmouseover="nav2over()" onmouseleave="nav2leave()" onclick="nav2click()">contact</div>
+	<a href="Dale_Riechert_10-22-2014.pdf"><div id="nav2" class="nav-item" onmouseover="nav2over()" onmouseleave="nav2leave()">resume</div></a>
+	<div id="nav3" class="nav-item" onmouseover="nav3over()" onmouseleave="nav3leave()" onclick="nav3click()">projects</div>
+	<a href="http://www.flickr.com/photos/130574536@N07/"><div id="nav4" class="nav-item" onmouseover="nav4over()" onmouseleave="nav4leave()">photography</div></a>
+	<div id="nav5" class="nav-item" onmouseover="nav5over()" onmouseleave="nav5leave()" onclick="nav5click()">contact</div>
 </div>
 </div>
 
 <div id="content">
+<div id="content-warning" class="content-container">This site uses elements that require Javascript and an up-to-date browser.</div>
 <div id="content1" class="content-container">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada vitae ex nec commodo. Aenean et tempus sem, eu dictum sapien. Donec ullamcorper lorem et nunc euismod sagittis. Donec scelerisque malesuada odio, id volutpat magna lobortis ac. Sed aliquam mi leo, eget tincidunt orci mattis non. Proin congue, est imperdiet molestie dignissim, lectus est egestas velit, at sollicitudin mauris odio quis diam. Vestibulum suscipit tortor nisl, quis dictum nunc consectetur vel. Cras consequat nisl a neque vulputate, at mattis ex malesuada. Duis in erat at velit pharetra maximus id ac justo. Vestibulum facilisis, purus quis maximus molestie, ligula nisi lacinia erat, at tempus sem mauris at turpis. Vivamus in pretium dui. Vestibulum vitae laoreet felis, in imperdiet erat. Vivamus vitae nisl pellentesque, commodo risus non, luctus ante.
+	Hello, I am Dale Riechert. I am currently studying Informatics at Arizona State University with a focus on digital culture. I plan to graduate in 2016.
+	Informatics is an engineering field that creates connections between people, computers, and information. As such, informatics is incredibly diverse and can be applied nearly anywhere.
+	Digital culture encompasses the culture we live throughout our lives today: surrounded by the aid of computers, and digital media.
+	I previously studied computer science for three years but found informatics more enjoyable with its emphasis on practical application instead of theory.
+	My passions include the video game and technology industries, as well as graphic design, foreign culture, and more.<br>
+	I am currently interested in any internship and entry-level positions that will provide real world experience that will complement my coursework.
 </div>
 <div id="content2" class="content-container">
-	<a href="mailto:daleriechert@gmail.com">Email</a><br>
-	<a href="http://www.linkedin.com/pub/dale-riechert/a7/646/520">LinkedIn</a><br>
-	<a href="http://www.facebook.com/daleriechert">Facebook</a><br>
-	<a href="skype:Azbulldog?chat">Skype</a>
+</div>
+<div id="content3" class="content-container">
+	<h3>Personal Website</h3>
+	This website is written with HTML/CSS and light Javascript. It is hosted on my <a href="http://github.com/daleriechert/daleriechert.github.io">GitHub</a>. It has provided me insight to the nauseating process of formatting and aligning page elements while simultaneously considering legacy and cross-system support.<br><br>
+	<h3>Blog</h3>
+	This is a basic blog system written with HTML/CSS, PHP, and MySQL. Administrators are able to control content while visitors may leave comments on entries. It provided important experience with handling database entries while keeping things in order. Additional developments, among others, would remove deprecated functions and add proper security.<br>
+	<a href="projects/blog.png">Screenshot</a> &bull; <a href="projects/blog.zip">Source</a>
+</div>
+<div id="content4" class="content-container">
+</div>
+<div id="content5" class="content-container">
+	&bull; <a href="mailto:dale@riechert.me">Email</a><br>
+	&bull; <a href="http://www.linkedin.com/pub/dale-riechert/a7/646/520">LinkedIn</a><br>
+	&bull; <a href="http://www.facebook.com/daleriechert">Facebook</a><br>
+	&bull; <a href="skype:Azbulldog?chat">Skype</a><br>
 </div>
 </div>
 
