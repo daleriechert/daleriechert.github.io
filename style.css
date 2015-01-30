@@ -139,7 +139,12 @@
 	transform: translateY(-50%);
 }
 
-
+.thumbnail {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius:50%;
+	border:3px solid #444444;
+}
 
 h1 {
 	color:#7bae47;

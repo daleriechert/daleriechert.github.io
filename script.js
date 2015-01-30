@@ -154,7 +154,3 @@ function nav6click() {
 	document.getElementById("content6").style.display = "block";
 }
 
-function OpenTab(url) {
-  var win=window.open(url, '_blank');
-  win.focus();
-}
