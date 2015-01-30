@@ -1,5 +1,5 @@
 ﻿html, body {
-	font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family:'Roboto', sans-serif;
 	background-color:#FFFFFF;
 	margin:0;
 	padding:0;
@@ -37,7 +37,7 @@
 	background-color:#444444;
 	color:#999999;
 	font-size:1.5em;
-	font-weight:lighter;
+	font-weight:300;
 	width:30%;
 	height:70%;
 	min-height:400px;
@@ -107,7 +107,7 @@
 .content-container {
 	color: #444444;
 	font-size: 1.5em;
-	font-weight: lighter;
+	font-weight: 300;
 	text-align:justify;
 	padding-left:3%;
 	padding-right:22%;
@@ -156,14 +156,14 @@ h1 {
 }
 h2 {
 	color:#444444;
-	font-weight:lighter;
+	font-weight:300;
 	font-size:1.5em;
 	display:inline;
 	text-transform: lowercase;
 }
 h3 {
 	color:#444444;
-	font-weight:bold;
+	font-weight:700;
 	font-size:1em;
 	margin:0;
 	font-
