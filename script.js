@@ -154,3 +154,11 @@ function nav6click() {
 	document.getElementById("content6").style.display = "block";
 }
 
+function onLoad() {
+	if (window.location.hash) {        
+		nav1click(); //load content to prevent JavaScript warning
+		nav3click();
+	} else {
+    		nav1click();
+	}
+}
