@@ -29,6 +29,7 @@ body {
 
 p {
 	color: #565656;
+    font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -44,6 +45,13 @@ a:hover {
     float: none;
     margin: 0 auto;
 }
+h2 {
+	font-family: 'Anton', sans-serif;
+}
 h4 {
 	margin-bottom: -0.5em;
+	font-family: 'Anton', sans-serif;
+}
+address, strong, footer {
+	font-family: 'Oswald', sans-serif;
 }
