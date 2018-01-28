@@ -1,8 +1,8 @@
 var userFeed = new Instafeed({
 			get: 'user',
-			userId: '6980206754',
-			clientId:'81c08da111ed4bb38d595df78f6d43b8',
-			accessToken: '6980206754.1677ed0.9a694174174e472a935741bfebd40a0c',
+			userId: '6985370173',
+			clientId:'24dfc9c2d8c84ef39e6274cf77c7b06f',
+			accessToken: '6985370173.1677ed0.3f97c25606eb468bbefa998af97d7d90',
 			resolution: 'low_resolution',
 			limit: '9',
 			template: '<div class="col-md-4 my-4"><div class="thumbnail"><a href="{{link}}"><img style="width:100%" src="{{image}}" /></a></div><div class="caption my-2"><p>{{caption}}</p></div><div class="caption small"><p>{{model.created_time}}<br>{{location}}</p></div></div></div>',
