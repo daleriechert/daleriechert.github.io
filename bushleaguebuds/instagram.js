@@ -5,7 +5,7 @@ var userFeed = new Instafeed({
 			accessToken: '6985370173.1677ed0.3f97c25606eb468bbefa998af97d7d90',
 			resolution: 'low_resolution',
 			limit: '9',
-			template: '<div class="col-md-4 my-4"><div class="thumbnail"><a href="{{link}}"><img style="width:100%" src="{{image}}" /></a></div><div class="caption my-2"><p>{{caption}}</p></div><div class="caption small"><p>{{model.created_time}}<br>{{location}}</p></div></div></div>',
+			template: '<div class="col-md-4 my-4"><div class="thumbnail"><a href="{{link}}"><img style="width:100%" src="{{image}}" /></div><div class="caption my-2"><p>{{caption}}</p></div><div class="caption small"><p>{{model.created_time}}<br>{{location}}</p></a></div></div></div>',
 			filter: function(image) {
 
 				var date = new Date(image.created_time*1000);
