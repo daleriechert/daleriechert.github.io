@@ -98,10 +98,6 @@ html, body {
 }
 
 .body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 2.4fr 0.1fr;
-  grid-template-areas: "header" "content" "content";
   grid-area: body;
   overflow: auto;
   padding-right: 15vw;
@@ -110,15 +106,13 @@ html, body {
 }
 
 .header {
-	grid-area: header;
-	height: 20vh;
+	height:200px;
 	background-color: #FFFFFF;
 	color: #444444;
 	text-transform: lowercase;
 }
 
 .content {
-	grid-area: content;
 	background-color: #FFFFFF;
 	color: #444444;
 	text-align: justify;
@@ -226,5 +220,8 @@ a:active {
 	.nav-button-image {
 		height: 20px;
 		width: 20px;
+	}
+	.header {
+		height:117px;
 	}
 }
