@@ -99,7 +99,7 @@ html, body {
 
 .body {
   grid-area: body;
-  overflow: visible;
+  overflow: auto;
   padding-right: 15vw;
   padding-top: 5vh;
   padding-left: 2.5vw;
