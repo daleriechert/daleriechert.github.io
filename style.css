@@ -32,7 +32,7 @@ html, body {
 	grid-area: portrait;
 	padding-top: 2.5vh;
 	padding-bottom: 2.5vh;
-	padding-right: 5vh;
+	padding-left: 1.75vw;
 }
 .portrait-picture {
 	-webkit-border-radius: 50%;
@@ -99,17 +99,18 @@ html, body {
 
 .body {
   grid-area: body;
-  overflow: auto;
+  overflow: visible;
   padding-right: 15vw;
   padding-top: 5vh;
   padding-left: 2.5vw;
 }
 
 .header {
-	height:200px;
+	height:196px;
 	background-color: #FFFFFF;
 	color: #444444;
 	text-transform: lowercase;
+	padding-bottom:1.25vh;
 }
 
 .content {
@@ -151,7 +152,6 @@ html, body {
 	width:150px;
 	margin-right:.5vw;
 	margin-bottom:.5vh;
-	margin-buttom:.5vh;
 	object-fit:cover;
 }
 
@@ -191,38 +191,4 @@ a:hover {
 a:active {
 	color:#7bae47;
 	text-decoration: none;
-}
-
-@media all and (max-width:1280px) {
-	.left-column {
-		padding-left: 1vw;
-	}
-	.body {
-		padding-right: 2.5vw;
-	}
-}
-@media all and (max-width:1080px) {
-	html, body {
-		font-size:1em;
-	}
-	.portrait { 
-		padding-top: 5vh;
-		padding-left: 2.5vw;
-	}
-	.portrait-picture { 
-		width: 98px;
-		height: 98px;
-		padding-top: 
-	}
-	.nav-button {
-		height: 20px;
-		width: 20px;
-	}
-	.nav-button-image {
-		height: 20px;
-		width: 20px;
-	}
-	.header {
-		height:117px;
-	}
 }
