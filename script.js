@@ -169,8 +169,8 @@ function nav6click() {
 	document.getElementById("content6").style.display = "block";
 }
 
-function onLoad() {
-	loadFeed()
+function init() {
+	loadFlickrFeed()
 	switch(window.location.hash) {
 		case "#home":
 			nav1click();
@@ -188,8 +188,7 @@ function onLoad() {
 			nav5click();
 			break;
 		default:
-			if (window.location.hash) {        
-				nav1click(); //load content to prevent JavaScript warning
+			if (window.location.hash) { //for project hashes       
 				nav3click();
 			}
 			else {
@@ -198,25 +197,30 @@ function onLoad() {
 	}
 }
 
-function loadFeed() {
+function loadFlickrFeed() {
 	$.ajax({
 		url: 'https://www.flickr.com/services/feeds/photos_public.gne?id=130574536@N07&format=json',
 		type: 'GET',
 		dataType: 'jsonp',
 		jsonpCallback: 'jsonFlickrFeed',
 		success: function(result, status, xhr) {
-			$.each(result.items, function (i, item) {
+			$.each(result.items, function (i, item) {			
+				let thumb_link = item.media.m;
+				let photo_link = thumb_link.replace("_m", "_b");
+				
 				var link = $("<a>").attr({
-					href: item.link,
-					target: "_blank"
+					href: photo_link,
+					"data-lightbox": "Photos",
+					title: item.title
 				})
-				var photo = $("<img>").attr({
-					src: item.media.m,
-					"class": "photo"
+				var thumbnail = $("<img>").attr({
+					"class": "photo-thumb",
+					src: item.media.m
 				})
-				link.append(photo);
+			
+				link.append(thumbnail);
 				$("#content5").append(link)
-				if (i === 19) {
+				if (i === 17) {
 					$("#content5").append("<br>")
 					$("#content5").append($("<a>").attr({
 						href: "https://www.flickr.com/photos/130574536@N07/",
@@ -232,3 +236,5 @@ function loadFeed() {
 		}
 	});
 }
+
+document.addEventListener("DOMContentLoaded", init, false)

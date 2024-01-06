@@ -1,24 +1,20 @@
+<!doctype html>
 <html>
 
 	<head profile="http://www.w3.org/2005/10/profile">
 		<meta charset="UTF-8">
 		<title>Dale Riechert</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="script.js"></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,700" rel="stylesheet" type="text/css">
-
-		<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
-		<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
-		<script type="text/javascript">Shadowbox.init({
-			autoplayMovies: false,
-		});</script>
-
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/lightbox2@2.11.4/dist/css/lightbox.min.css">
+		<script type="text/javascript" src="https://unpkg.com/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/pdfobject@2.2.12/pdfobject.min.js"></script>
 		<link rel="icon" type="image/png" href="favicon.png">
 	</head>
 
-	<body onload="onLoad()">
+	<body>
 
 		<div class="grid-container">
 		 
@@ -68,14 +64,14 @@
 				</div>
 				
 				<div class="footer">
-					&copy; 2020 Dale Riechert
+					&copy; 2024 Dale Riechert
 				</div>
 			</div>
 			
 			<div class="body">	
 			
 				<div class="header">
-					<h1><span style="font-weight:100">Dale</span>Riechert</h1><br>
+					<h1><span style="font-weight:100">Dale</span><span style="font-size:0">&#32;</span>Riechert</h1><br>
 					<span style="margin-left:5%">Design and Engineering</span>
 				</div>
 
@@ -84,13 +80,14 @@
 					<div id="content-warning" class="content-container">This site uses elements that require JavaScript and an up-to-date browser.</div>
 
 					<div id="content1" class="content-container">
-						Hello, I am Dale Riechert, a graduate of informatics and digital culture at Arizona State University and recent transplant to the Seattle, WA area.<br><br>
-						Informatics is an interdisciplinary field incorporating areas such as computer science, information systems, and human computer interaction. I am what comes between data, computers, and people. As we head deeper into the 21st century these computer systems are playing an ever bigger role, becoming essential to nearly every other field out there. Digital culture is the study of digital media and the digital systems in our everyday life, bringing creative solutions to today and tomorrow's problems. <br><br>
-						My passions include the video game and consumer technology industries. I also hold interests in graphic design, photography, foreign culture, film, and more. As a hobby I collect mechanical wristwatches and have succeeded in having one of my own designs manufactured.
+						Hello, I am Dale Riechert, a professional engineer and transplant to the beautiful Seattle area.<br><br>
+						Through my dad, another engineer, I was exposed at an early age to the personal computers of the time and dial-up internet, seeding a lifelong passion for technology and a full appreciation for the computing revolution that has come. I heeded the opportunity to study Informatics at Arizona State University, an interdisciplinary field spanning areas of computer science, computer information systems, and human computer interaction. Fundamentally, I seek to bring creative solutions to the problems that unfold between computers, data, and people—as we head deeper into the 21st century.<br><br>
+						On the side I enjoy video games, film, music, graphic design, photography, hiking, traveling Japan, animals, and collecting charmingly analog watches, with which I have also learned the essentials of watchmaking.
 					</div>
 
 					<div id="content2" class="content-container">
-						<iframe src="Resume - Dale Riechert.pdf" width="100%" height="170%"></iframe>
+						<iframe src="Resume - Dale Riechert.pdf" width="100%" height="100%"></iframe>
+
 					</div>
 
 					<div id="content3" class="content-container">
@@ -98,10 +95,10 @@
 						<br>
 						<a name="blb">
 						<h3>Bush League Buds</h3></a>
-						This is a local business website built using Bootstrap v4 and integrating <a href="http://instafeedjs.com/">Instafeed.js</a> for a live Instagram feed.
+						This is a local business website built using Bootstrap v4 and integrating <a href="http://instafeedjs.com/" target="_blank">Instafeed.js</a> for a live Instagram feed.
 						<br>
 						<a href="projects/bushleaguebuds/home.html" target="_blank">View Site</a> &bull;
-						<a href="https://github.com/bushleaguebuds/bushleaguebuds.github.io">Source Code</a>
+						<a href="https://github.com/bushleaguebuds/bushleaguebuds.github.io" target="_blank">Source Code</a>
 						<br><br>
 						<h2>2016</h2>
 						<br>
@@ -109,75 +106,75 @@
 						<h3>Helix House Capstone Project</h3></a>
 						As a senior capstone project my team created an internal webpage for the <a href="http://MyHelixHouse.com" target="_blank">Helix House</a> digital advertising agency. This page conglomerates client marketing data from different services: Google Analytics, Google Ads, and Twilio. I built the HTML/CSS based on provided wireframes and assisted in PHP API integration and functionality. Helix House will test drive the webpage to analyze possible improvements, but was thrilled that our deliverable was fully functional.
 						<br>
-						<a href="https://www.youtube.com/watch?v=LxZjWuh2y0Y">Demo Video</a> &bull;
+						<strike><a href="https://www.youtube.com/watch?v=LxZjWuh2y0Y" target="_blank">Demo Video</a></strike> &bull;
 						<a href="projects/capstone.zip">Source Code</a>
 						<br><br>
 						<a name="light">
 						<h3>Light Through Matter</h3></a>
 						This media installation combines a MIDI keyboard with a projector so as a pianist plays colorful shapes are projected onto the cloud suspended above them. The keyboard note's octave determines the color, and tempo determines the speed of movement and distortion. I created the Max patch that the system runs on while also assisting in construction and installation of the equipment.
 						<br>
-						<a href="https://player.vimeo.com/video/165214516" rel="shadowbox[Video];height=720;width=1280" title="Light Through Matter">Video</a> &bull;
+						<a href="https://vimeo.com/165214516" target="_blank">Video</a> &bull;
 						<a href="projects/mediainstallation.zip">Source Code</a>
 						<br><br>
 						<a name="haptics">
 						<h3>Computer Interface Feedback Through Haptics</h3></a>
 						This project aimed to explore brain plasticity and sensory replacement by replacing the computer mouse cursor with vibration feedback. The cursor's X and Y position, as well as the color of the item the cursor was positioned over, were each mapped to a vibration motor. The system was built with an Arduino, Max, and an HTML/CSS webpage on a laptop computer.
 						<br>
-						<a href="projects/haptics1.jpg" rel="shadowbox[Haptics]" title="Computer Interface Feedback Through Haptics">Photos</a> &bull;
-						<a href="projects/haptics2.jpg" rel="shadowbox[Haptics]" title="Computer Interface Feedback Through Haptics"></a>
-						<a href="projects/haptics3.jpg" rel="shadowbox[Haptics]" title="Computer Interface Feedback Through Haptics"></a>
-						<a href="projects/haptics4.jpg" rel="shadowbox[Haptics]" title="Computer Interface Feedback Through Haptics"></a>
-						<a href="projects/haptics.pdf">Report Paper</a> &bull;
+						<a href="projects/haptics1.jpg" data-lightbox="Haptics" title="Computer Interface Feedback Through Haptics">Photos</a> &bull;
+						<a href="projects/haptics2.jpg" data-lightbox="Haptics" title="Computer Interface Feedback Through Haptics"></a>
+						<a href="projects/haptics3.jpg" data-lightbox="Haptics" title="Computer Interface Feedback Through Haptics"></a>
+						<a href="projects/haptics4.jpg" data-lightbox="Haptics" title="Computer Interface Feedback Through Haptics"></a>
+						<a href="projects/haptics.pdf" target="_blank">Report Paper</a> &bull;
 						<a href="projects/haptics.zip">Source Code</a>
 						<br><br>
 						<h3>Vulgar Phone Cases</h3>
 						As a group project, we had to utilize data representing vulgarity in the fabrication of some surface. We chose to use the occurances of swear words in our text messages and then mapping that data onto 3D-printable phone cases. The phone case models were loaded into Rhinocerous 3D, with the data mapping occuring in Grasshopper. I created this Grasshopper definition for the rest of the group to use.
 						<br>
-						<a href="projects/vulgarity.jpg" rel="shadowbox" title="Vulgar Phone Cases">Photo</a> &bull;
+						<a href="projects/vulgarity.jpg" data-lightbox="Vulgar" title="Vulgar Phone Cases">Photo</a> &bull;
 						<a href="projects/vulgarity.zip">Source Code</a>
 						<br><br>
 						<h3>Letter Frequency Keyboard</h3>
 						This was an individual project in which I took a similar approach as the Vulgarity project above. Using 3D models of keyboard keycaps, I modified each of them using Grasshopper based on each letter's frequency in the English language before having them 3D printed and arranged.
 						<br>
-						<a href="projects/keyboard.jpg" rel="shadowbox" title="Letter Frequency Keyboard">Photo</a> &bull;
+						<a href="projects/keyboard.jpg" data-lightbox="Letter" title="Letter Frequency Keyboard">Photo</a> &bull;
 						<a href="projects/keyboard.zip">Source Code</a>
 						<br><br>
 						<h2>2015</h2>
 						<br>
 						<a name="website">
 						<h3>Personal Website</h3></a>
-						This website is written with HTML/CSS from scratch and some JavaScript. It is hosted on my <a href="http://github.com/daleriechert/daleriechert.github.io" target="_blank">GitHub</a>.
+						This website is written with HTML/CSS from scratch and later adding some JavaScript. It is hosted on my <a href="http://github.com/daleriechert/daleriechert.github.io" target="_blank">GitHub</a> and tweaked as I see fit.
 						<br><br>
 						<a name="drum">
 						<h3>Motion Control Drum Machine</h3></a>
 						This is an interactive drum machine using an Arduino and potentiometers for note adjustment, a Wii remote and GlovePIE for motion control, and Max for note processing and system communication. Each time the user swings the remote, in the order indicated by the LEDs, one of the six notes will play.
 						<br>
-						<a href="projects/drummachine.jpg" rel="shadowbox" title="Drum Machine &bull; Arduino Setup">Photo</a> &bull;
+						<a href="projects/drummachine.jpg" data-lightbox="Drum" title="Drum Machine &bull; Arduino Setup">Photo</a> &bull;
 						<a href="projects/drummachine.zip">Source Code</a>
 						<br><br>
 						<a name="game2">
 						<h3>Big Cosmonaut Game</h3></a>
 						Taking my previous game from 2D to 3D, this short game was developed in Unity using free assets. The player must reach the spaceship before a meteor destroys everything.
 						<br>
-						<a href="projects/bigcosmonaut.png" rel="shadowbox" title="Big Cosmonaut">Screenshot</a>
+						<a href="projects/bigcosmonaut.png" data-lightbox="Big Cosmonaut" title="Big Cosmonaut">Screenshot</a>
 						<br><br>
 						<a name="app2">
 						<h3>Phone App Design 2</h3></a>
 						This was a team project to develop an app idea into a visual prototype in Justinmind. Called Roommate Fu, this app would be a chore organizer for roommates. I constructed the prototype while consulting with team members.
 						<br>
-						<a href="projects/app1.png" rel="shadowbox[Phone App]" title="Phone App Design">Screenshots</a>
-						<a href="projects/app2.png" rel="shadowbox[Phone App]" title="Phone App Design"></a>
-						<a href="projects/app3.png" rel="shadowbox[Phone App]" title="Phone App Design"></a>
-						<a href="projects/app4.png" rel="shadowbox[Phone App]" title="Phone App Design"></a>
+						<a href="projects/app1.png" data-lightbox="Phone App" title="Phone App Design">Screenshots</a>
+						<a href="projects/app2.png" data-lightbox="Phone App" title="Phone App Design"></a>
+						<a href="projects/app3.png" data-lightbox="Phone App" title="Phone App Design"></a>
+						<a href="projects/app4.png" data-lightbox="Phone App" title="Phone App Design"></a>
 						<br><br>
 						<a name="research">
 						<h3>ASU Research Website</h3></a>
 						This project tasked each team with redesigning the ASU Research Integrity website and building a functional prototype. Each prototype was evaluated through user testing and the results were given to ASU for consideration in a final design. My team focused on streamlining the research application process and uniformly organizing the large amounts of information. I constructed the prototype while consulting with team members, and assisted in collecting and evaluating user data.
 						<br>
 						<a href="https://web.archive.org/web/20150905141508/https://researchintegrity.asu.edu/" target="_blank">Original Website</a> &bull;
-						<a href="projects/research_integrity_heuristic_evaluation.pdf">Heuristic Evaluation</a> &bull;
+						<a href="projects/research_integrity_heuristic_evaluation.pdf" target="_blank">Heuristic Evaluation</a> &bull;
 						<strike>Prototype</strike> &bull;
-						<a href="projects/research_integrity_results.pdf">Test Results</a>
+						<a href="projects/research_integrity_results.pdf" target="_blank">Test Results</a>
 						<br><br>
 						<a name="app">
 						<h3>Phone App Design</h3></a>
@@ -191,71 +188,67 @@
 						<h3>Blog System</h3></a>
 						This is a basic blog system written with HTML/CSS, PHP, and MySQL. Administrators are able to control content while visitors may leave comments on entries.
 						<br>
-						<a href="projects/blog.png" rel="shadowbox" title="Blog System">Screenshot</a> &bull; <a href="projects/blog.zip">Source Code</a>
+						<a href="projects/blog.png" data-lightbox="Blog" title="Blog System">Screenshot</a> &bull; <a href="projects/blog.zip">Source Code</a>
 						<br><br>
 						<a name="game">
 						<h3>Little Cosmonaut Game</h3></a>
 						This is a simple game built in GameMaker using my own assets. It is a vertical platformer, the catch is that gravity decreases the higher up the player climbs, causing more dynamic and interesting physics. The goal is to reach the top with the fastest time.
 						<br>
-						<a href="projects/littlecosmonaut.png" rel="shadowbox" title="Little Cosmonaut">Screenshot</a> &bull; 
+						<a href="projects/littlecosmonaut.png" data-lightbox="Little Cosmonaut" title="Little Cosmonaut">Screenshot</a> &bull; 
 						<a href="projects/littlecosmonaut.zip">Download</a>
 						<br><br>
 						<h3>Keyboard Switch Tester</h3>
 						Using LEDs, a Teensy USB microcontroller, and AutoHotkey, I gave this dummy keyboard switch tester some life. It now makes a cool desk toy and controls media and volume functions on my desktop computer.
 						<br>
-						<a href="projects/switchtester.jpg" rel="shadowbox" title="Keyboard Switch Tester">Photo</a>
+						<a href="projects/switchtester.jpg" data-lightbox="Keyboard" title="Keyboard Switch Tester">Photo</a>
 					</div>
 
 					<div id="content4" class="content-container" style="text-align:left;">
 						<h2>2019</h2>
 						<br>
-						<a href="design/Neptune 2.png" rel="shadowbox[Design]" title="Neptune Concept"><img class="thumbnail" src="design/neptune_2_thumb.jpg"></a>
-						<a href="design/Zissou.jpg" rel="shadowbox[Design]" title="Steve Zissou Concept"><img class="thumbnail" src="design/zissou_thumb.jpg"></a>
-						<a href="design/Elektronika Alfa.png" rel="shadowbox[Design]" title="Elektronika Alfa Concept"><img class="thumbnail" src="design/elektronika_alfa_thumb.jpg"></a>
-						<a href="design/Leonuv Watch.png" rel="shadowbox[Design]" title="Leonuv Concept"><img class="thumbnail" src="design/leonuv_thumb.jpg"></a>
-						<a href="design/Elbrus2.png" rel="shadowbox[Design]" title="Mt. Elbrus Concept"><img class="thumbnail" src="design/elbrus_thumb.jpg"></a>
-						<a href="design/SnowLeopardWhite.png" rel="shadowbox[Design]" title="Snow Leopard Concept"><img class="thumbnail" src="design/snow_leopard_thumb.jpg"></a>
-						<a href="design/Poljot Dolphin.png" rel="shadowbox[Design]" title="Poljot Dolphin Reissue Concept"><img class="thumbnail" src="design/poljot_dolphin_thumb.jpg"></a>
+						<a href="design/Neptune 2.png" data-lightbox="Design" title="Neptune Concept"><img class="design-thumb" src="design/neptune_2_thumb.jpg"></a>
+						<a href="design/Zissou.jpg" data-lightbox="Design" title="Steve Zissou Concept"><img class="design-thumb" src="design/zissou_thumb.jpg"></a>
+						<a href="design/Elektronika Alfa.png" data-lightbox="Design" title="Elektronika Alfa Concept"><img class="design-thumb" src="design/elektronika_alfa_thumb.jpg"></a>
+						<a href="design/Leonuv Watch.png" data-lightbox="Design" title="Leonuv Concept"><img class="design-thumb" src="design/leonuv_thumb.jpg"></a>
+						<a href="design/Elbrus2.png" data-lightbox="Design]" title="Mt. Elbrus Concept"><img class="design-thumb" src="design/elbrus_thumb.jpg"></a>
+						<a href="design/SnowLeopardWhite.png" data-lightbox="Design" title="Snow Leopard Concept"><img class="design-thumb" src="design/snow_leopard_thumb.jpg"></a>
+						<a href="design/Poljot Dolphin.png" data-lightbox="Design" title="Poljot Dolphin Reissue Concept"><img class="design-thumb" src="design/poljot_dolphin_thumb.jpg"></a>
 						<br>
 						<h2>2018</h2>
 						<br>
-						<a href="design/laika.png" rel="shadowbox[Design]" title="Laika Watch Project"><img class="thumbnail" src="design/laika_thumb.jpg"></a>
-						<br>
-						<h2>2017</h2>
-						<br>
-						<a href="design/Castro.png" rel="shadowbox[Design]" title="Watch.ru Fidel Castro Project"><img class="thumbnail" src="design/castro_thumb.jpg"></a>
+						<a href="design/laika.png" data-lightbox="Design" title="Laika Watch Project"><img class="design-thumb" src="design/laika_thumb.jpg"></a>
 						<br>
 						<h2>2016</h2>
 						<br>
-						<a href="http://www.redbubble.com/people/arizone" target="_blank"><img class="thumbnail" src="design/redbubble_thumb.jpg"></a>
-						<a href="design/Slava.png" rel="shadowbox[Design]" title="Watchuseek.Com Slava Amphibia Project"><img class="thumbnail" src="design/slava_thumb.jpg"></a>
-						<a href="design/Ratnik.png" rel="shadowbox[Design]" title="Watchuseek.com Ratnik Watch Project 2016"><img class="thumbnail" src="design/ratnik_thumb.jpg"></a>
+						<a href="http://www.redbubble.com/people/arizone" target="_blank"><img class="design-thumb" src="design/redbubble_thumb.jpg"></a>
+						<a href="design/Slava.png" data-lightbox="Design" title="Watchuseek.Com Slava Amphibia Project"><img class="design-thumb" src="design/slava_thumb.jpg"></a>
+						<a href="design/Ratnik.png" data-lightbox="Design" title="Watchuseek.com Ratnik Watch Project 2016"><img class="design-thumb" src="design/ratnik_thumb.jpg"></a>
 						<br>
 						<h2>2015</h2>
 						<br>
-						<a href="design/businesscard.png" rel="shadowbox[Design]" title="Personal Business Card"><img class="thumbnail" src="design/businesscard_thumb.jpg"></a>
-						<a href="design/house.png" rel="shadowbox[Design]" title="House Diagram"><img class="thumbnail" src="design/house_thumb.jpg"></a>
+						<a href="design/businesscard.png" data-lightbox="Design" title="Personal Business Card"><img class="design-thumb" src="design/businesscard_thumb.jpg"></a>
+						<a href="design/house.png" data-lightbox="Design" title="House Diagram"><img class="design-thumb" src="design/house_thumb.jpg"></a>
 						<br>
 						<h2>2014</h2>
 						<br>
-						<a href="design/watchad.flv" rel="shadowbox[Design];height=720;width=1280" title="Short Advert in After Effects"><img class="thumbnail" src="design/watchad_thumb.jpg"></a>
-						<a href="design/goldfish.png" rel="shadowbox[Design]" title="Concert Poster"><img class="thumbnail" src="design/goldfish_thumb.jpg"></a>
-						<a href="design/Neptune.png" rel="shadowbox[Design]" title="Neptune Watch Render"><img class="thumbnail" src="design/neptune_thumb.jpg"></a>
+						<a href="design/watchad.flv" title="Short Advert in After Effects"><img class="design-thumb" src="design/watchad_thumb.jpg"></a>
+						<a href="design/goldfish.png" data-lightbox="Design" title="Concert Poster"><img class="design-thumb" src="design/goldfish_thumb.jpg"></a>
+						<a href="design/Neptune.png" data-lightbox="Design" title="Neptune Watch Render"><img class="design-thumb" src="design/neptune_thumb.jpg"></a>
 						<br>
 						<h2>2013</h2>
 						<br>
-						<a href="design/DroidDNA.png" rel="shadowbox[Design]" title="HTC Droid DNA 2D Render"><img class="thumbnail" src="design/droiddna_thumb.jpg"></a>
+						<a href="design/DroidDNA.png" data-lightbox="Design" title="HTC Droid DNA 2D Render"><img class="design-thumb" src="design/droiddna_thumb.jpg"></a>
 						<br>
 						<h2>2012</h2>
 						<br>
-						<a href="design/calculator.png" rel="shadowbox[Design]" title="Windows Metro Concept"><img class="thumbnail" src="design/calculator_thumb.jpg"></a>
-						<a href="design/knitting.png" rel="shadowbox[Design]" title="Vintage Magazine Ad Recreation"><img class="thumbnail" src="design/knitting_thumb.jpg"></a>
-						<a href="design/TeddySnatch.jpg" rel="shadowbox[Design]" title="Snatch Film Character Intro"><img class="thumbnail" src="design/teddysnatch_thumb.jpg"></a>
+						<a href="design/calculator.png" data-lightbox="Design" title="Windows Metro Concept"><img class="design-thumb" src="design/calculator_thumb.jpg"></a>
+						<a href="design/knitting.png" data-lightbox="Design" title="Vintage Magazine Ad Recreation"><img class="design-thumb" src="design/knitting_thumb.jpg"></a>
+						<a href="design/TeddySnatch.jpg" data-lightbox="Design" title="Snatch Film Character Intro"><img class="design-thumb" src="design/teddysnatch_thumb.jpg"></a>
 						<br>
 						<h2>2010</h2>
 						<br>
-						<a href="design/japanesetshirt.png" rel="shadowbox[Design]" title="Japanese Club T-Shirts"><img class="thumbnail" src="design/japanesetshirt_thumb.jpg"></a>
-						<a href="design/glare.png" rel="shadowbox[Design]" title="Glare Skateboards Business Concept Logo"><img class="thumbnail" src="design/glare_thumb.jpg"></a>
+						<a href="design/japanesetshirt.png" data-lightbox="Design" title="Japanese Club T-Shirts"><img class="design-thumb" src="design/japanesetshirt_thumb.jpg"></a>
+						<a href="design/glare.png" data-lightbox="Design" title="Glare Skateboards Business Concept Logo"><img class="design-thumb" src="design/glare_thumb.jpg"></a>
 					</div>
 
 					<div id="content5" class="content-container">
