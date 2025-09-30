@@ -1,194 +1,228 @@
 html, body {
 	margin:0;
 	padding:0;
-	height:100%;
+	min-height:100%;
 	width:100%;
 	font-family:'Roboto', sans-serif;
-    font-size:1.25em;
-    font-weight:300;
+	font-size:1.25em;
+	font-weight:300;
+	color: #444444;
+	background: #fff;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 0.3fr 2.2fr;
-  grid-template-rows: 0.6fr 2.4fr 0.1fr;
-  grid-template-areas: "left-column body" "left-column body" "left-column body";
-  height: 100%;
-  width: 100%;
+	display: grid; 
+	grid-template-columns: 0.25fr 1.5fr; 
+	grid-template-rows: 0.6fr 2.3fr 0.1fr; 
+ 	gap: 0px 0px; 
+	grid-template-areas: 
+    "portrait header"
+    "sidebar main-content"
+    "footer main-content";
+	min-height: 100vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	position: relative;
 }
-
-.left-column {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 2.4fr 0.1fr;
-  grid-template-areas: "portrait" "nav" "footer";
-  grid-area: left-column;
-  padding-left: 15vw;
-  background-color: #444444;
-  color: #999999;
+.grid-container::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 15vw;
+	background-color: #444444;
+	z-index: 0;
+	pointer-events: none;
 }
+.portrait, .sidebar, .footer { position: relative; z-index: 1; }
 
 .portrait { 
 	grid-area: portrait;
-	padding-top: 2.5vh;
-	padding-bottom: 2.5vh;
-	padding-left: 1.75vw;
+	background-color: #444444;
+	padding: 1.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.portrait-wrapper {
+	position: relative;
+	width: 10rem;
+	height: 10rem;
+	margin: 0 auto;
 }
 .portrait-picture {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius:50%
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.portrait-overlay {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: #7bae47;
+	mix-blend-mode: color;
+	opacity: 1;
+	transition: opacity 180ms ease;
+}
+.portrait-overlay:hover {
+	opacity: 0;
 }
 
-.nav {
-	grid-area: nav;
+.header { 
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 2.5rem;
+
+}
+.header-text { 
 	text-transform: lowercase;
 }
-#nav a:link {
+
+.sidebar {
+	grid-area: sidebar;
+	background-color: #444444;
 	color: #999999;
-}
-#nav a:visited {
-	color: #999999;
-}
-#nav a:hover {
-	color: #999999;
-}
-#nav a:active {
-	color: #999999;
+	text-transform: lowercase;
 }
 .nav-item {
 	cursor:pointer;
-	padding-left:2.5vw;
-	padding-top:0.5vh;
-	padding-bottom:0.5vh;
-	padding-right:5vw;
+	padding: 0.5rem 5rem;
+	display: block;
+	color: #999999;
+	transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
 }
-#nav6 {
-	padding-left: 2.5vw;
-	padding-top: 1vh;
-	padding-bottom:2.5vh;
+.nav-item:hover {
+	background-color: #ffffff;
+	color: #444444;
+	transform: translateY(-1px);
+}
+.nav-item:focus, .nav-item.active {
+	background-color: #ffffff;
+	color: #444444;
+}
+.social {
+	padding-top: 0.5rem;
+	text-align: center;
 }
 .nav-button {
 	position: relative;
-	height: 25px;
-	width: 25px;
-	padding-right:0.25vw;
+	height: 1.5rem;
+	width: 1.5rem;
+	padding-right:0.25rem;
 	display: inline-block;
 }
 .nav-button-image {
-	height: 25px;
-	width: 25px;
+	height: 1.5rem;
+	width: 1.5rem;
+	display:block;
+	filter: brightness(60%);
+	transition: filter 180ms ease, transform 180ms ease;
 }
-.nav-button .hover {
-	position: absolute;
-	top: 0;
-    left: 0;
-	height:100%;
-	width:100%;
-	display: none;
-}
-.nav-button:hover .hover {
-    display: inline;
+.nav-button:hover .nav-button-image,
+.nav-button:focus .nav-button-image {
+	filter: brightness(100%);
+	transform: translateY(-1px);
 }
 
 .footer {
 	grid-area: footer;
-	padding-left:2.5vw;
-	font-size:.65em;
+	background-color: #444444;
+	color: #999999;
+	font-size:.75rem;
+	text-align: center;
+	padding: 0.5rem;
 }
 
-.body {
-  grid-area: body;
-  overflow: auto;
-  padding-right: 15vw;
-  padding-top: 5vh;
-  padding-left: 2.5vw;
+.main-content {
+	grid-area: main-content;
+	padding: 0.5rem 2.5rem;
 }
 
-.header {
-	height:196px;
-	background-color: #FFFFFF;
-	color: #444444;
-	text-transform: lowercase;
-	padding-bottom:1.25vh;
+.photo-thumb {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 180ms ease;
+}
+.photo-thumb:hover {
+	transform: translateY(-1px);
 }
 
-.content {
-	background-color: #FFFFFF;
-	color: #444444;
+p {
+	margin-top:0;
 	text-align: justify;
 }
-.content-container {
-	margin-bottom:2.5vh;
-}
-#content-warning {
-	display:block;
-}
-#content1 {
-	display:none;
-}
-#content2 {
-	display:none;
-	height:1150px;
-}
-#content3 {
-	display:none;
-}
-#content4 {
-	display:none;
-}
-#content5 {
-	display:none;
-}
-.design-thumb {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius:50%;
-	border:2px solid #444444;
-}
-.photo-thumb {
-	border:2px solid #444444;
-	height:150px;
-	width:150px;
-	margin-right:.5vw;
-	margin-bottom:.5vh;
-	object-fit:cover;
-}
-
 h1 {
 	color:#7bae47;
-	font-size:4.5em;
-	line-height:1em;
-	margin-top:0;
-	margin-bottom:0;
+	font-size: 4.5rem;
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
 	display:inline;
 }
 h2 {
 	color:#444444;
 	font-weight:300;
-	font-size:1.5em;
-	display:inline;
+	font-size:1.25rem;
+	display:block;
 }
 h3 {
 	color:#444444;
 	font-weight:700;
 	font-size:1em;
 	margin:0;
-	font-
+	line-height:1.2;
 }
-a:link {
+a {
 	color:#7bae47;
 	text-decoration: none;
-}
-a:visited {
-	color:#7bae47;
-	text-decoration: none;
+	transition: color 180ms ease;
+	line-height:2em;
 }
 a:hover {
 	color:#444444;
-	text-decoration: none;
 }
-a:active {
-	color:#7bae47;
-	text-decoration: none;
+span.avoidwrap {
+	display:inline-block;
+}
+
+@media (orientation: portrait) {
+	html, body {
+		font-size:1em;
+	}
+	.grid-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.grid-container::before {
+		display: none;
+	}
+	.main-content {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.portrait { 
+		padding: 0.5rem 0;
+	}
+	.portrait-wrapper {
+		width: 5rem;
+		height: 5rem;
+	}
+	.header {
+		padding-left: 1rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	.nav-item {
+		padding: 0.5rem 0.5rem;
+	}
+	.social {
+		padding-left: 0.5rem;
+	}
 }
