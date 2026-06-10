@@ -1,8 +1,8 @@
 const contentMap = {
 	home: `
 		<p>Hello, I am Dale Riechert, a professional software engineer and transplant to the beautiful Seattle area from scorching Phoenix, Arizona.</p>
-		<p>Through my dad, another computer engineer, I was exposed at an early age to the personal computers of the time and dial-up internet, seeding a lifelong passion for technology and a full appreciation for the computing revolution that has come. I heeded the opportunity to study Informatics at Arizona State University, an interdisciplinary field spanning areas of computer science, computer information systems, and human computer interaction. Fundamentally, I seek to bring creative solutions to the problems that unfold between computers, data, and people—as we head deeper into the 21st century.</p>
-		<p>On the side I enjoy video games, film, music, graphic design, photography, hiking, traveling Japan, animals, and collecting charmingly mechanical analog watches, with which I have also learned the essentials of watchmaking.</p>
+		<p>Through my dad, another computer engineer, I was introduced at an early age to the personal computers of the time as well as dial-up internet, sowing a lifelong passion for technology and a full appreciation for the computing and AI revolution that has come. I heeded the opportunity to study Informatics at Arizona State University, an interdisciplinary field spanning areas of computer science, computer information systems, and human-computer interaction. Fundamentally, I seek to bring creative solutions to the problems that unfold between computers, data, and people—as we head deeper into the 21st century.</p>
+		<p>On the side I enjoy video games, film, music, graphic design, photography, hiking, traveling, animals, and watchmaking.</p>
 		<div class="portrait-wrapper" title="Tybalt" style="width: 10vh; height: 10vh; display: inline-block; margin-left: 2.5vh; margin-top: 2.5vh;">
 			<img class="portrait-picture" alt="Tybalt" src="Tybalt.webp" style="border-radius: 0%;">
 			<div class="portrait-overlay" aria-hidden="true" style="border-radius: 0%;"></div>
